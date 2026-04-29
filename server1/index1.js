@@ -25,22 +25,22 @@ app.get('/', (req, res) => {
 });
 
 // POST – zpracuje data
-app.post('/submit', async (req, res) => {
-  const query = req.body.query;
+//app.post('/submit', async (req, res) => {
+//  const query = req.body.query;
 
-  logger.info("Odesláno:" + query );
+//  logger.info("Odesláno:" + query );
 
-  await fetch('http://localhost:4000/data', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({ query })
-  });
+//  await fetch('http://localhost:4000/data', {
+//    method: 'POST',
+//    headers: {
+//      'Content-Type': 'application/json'
+//    },
+//    body: JSON.stringify({ query })
+//  });
 
-  res.send(`Odesláno: ${query}`);
+//  res.send(`Odesláno: ${query}`);
 
-});
+//});
 
 // spuštění serveru
 
