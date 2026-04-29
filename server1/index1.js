@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const port = process.env.PORT || 3000;
 
 const pino = require('pino');
 
@@ -46,7 +47,7 @@ app.get('/', (req, res) => {
 
 //app.listen(3000, () => {
 //  console.log('Server běží na http://localhost:3000');
-app.listen(process.env.PORT || 3000, () => {
-    console.log('Server běží na: ' + ${process.env.PORT});
+app.listen(port, () => {
+    console.log('Server běží na: ' + ${port});
 
 //});
